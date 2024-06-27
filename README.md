@@ -1,5 +1,5 @@
 #Procedimiento de instalación local
-
+#No estan importados los archivos de node_modules por lo cual ya deben estar instalados en tu entorno
 ##Crear e Importar la base de datos
 Crear la base de datos messages en tu MySQL o phpmyadmin
 CREATE DATABASE messages;
