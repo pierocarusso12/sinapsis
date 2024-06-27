@@ -1,0 +1,24 @@
+{
+  "name": "backend",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "@middy/core": "^5.4.2",
+    "@middy/http-json-body-parser": "^5.4.2",
+    "aws-sdk": "^2.1648.0",
+    "dotenv": "^16.4.5",
+    "mysql2": "^3.10.1",
+    "serverless-dotenv-plugin": "^6.0.0"
+  },
+  "devDependencies": {
+    "serverless": "^3.35.2",
+    "serverless-offline": "^13.6.0"
+  }
+}

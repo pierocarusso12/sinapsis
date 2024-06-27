@@ -1,0 +1,58 @@
+openapi: 3.0.0
+info:
+  title: Campañas API
+  version: 1.0.0
+paths:
+  /campaigns:
+    post:
+      summary: Crear una nueva campaña
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Campaign'
+      responses:
+        '201':
+          description: Campaña creada exitosamente
+    get:
+      summary: Listar campañas
+      parameters:
+        - in: query
+          name: startDate
+          schema:
+            type: string
+            format: date
+        - in: query
+          name: endDate
+          schema:
+            type: string
+            format: date
+      responses:
+        '200':
+          description: Lista de campañas
+  /campaigns/{campaignId}/messages:
+    get:
+      summary: Listar mensajes de una campaña
+      parameters:
+        - in: path
+          name: campaignId
+          required: true
+          schema:
+            type: integer
+      responses:
+        '200':
+          description: Lista de mensajes de la campaña
+components:
+  schemas:
+    Campaign:
+      type: object
+      properties:
+        name:
+          type: string
+        startDate:
+          type: string
+          format: date
+        endDate:
+          type: string
+          format: date
