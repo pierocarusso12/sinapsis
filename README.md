@@ -16,15 +16,15 @@ DB_NAME=messages
 haz lo mismo para otros archivos como serverless.yml , guíate de los archivos
 
 
-##Iniciar proyecto backend:
-cd backend              -->Navega hasta la carpeta backend
-serverless offline      -->Inicia el servicio serverless en modo offline
+##PRIMERO Iniciar proyecto backend:
+`cd backend`             -->Navega hasta la carpeta backend
+`serverless offline`     -->Inicia el servicio serverless en modo offline
 
 
 
-##Iniciar proyecto frontend:
-cd frontend
-`ng serve`
+##LUEGO Iniciar proyecto frontend:
+`cd frontend`           -->Navega hasta la carpeta frontend
+`ng serve`              -->Inicia el front con angular en su última version
 
 
 ##Endpoints y Operaciones OPENAPI
