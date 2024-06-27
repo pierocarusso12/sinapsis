@@ -1,0 +1,23 @@
+<div class="form-container">
+<form [formGroup]="campaignForm" (ngSubmit)="onSubmit()">
+  <label for="user_id">User ID:</label>
+  <input id="user_id" formControlName="user_id">
+
+  <label for="name">Nombre para la campaña</label>
+  <input id="name" formControlName="name">
+
+  <label for="process_date">Fecha de Procesamiento:</label>
+  <input id="process_date" type="date" formControlName="process_date">
+
+  <label for="process_hour">Hora de Procesamiento:</label>
+  <input id="process_hour" type="time" formControlName="process_hour">
+
+  <label for="phone_list">Lista de Teléfonos:</label>
+  <input id="phone_list" formControlName="phone_list">
+
+  <label for="message_text">Mensaje de Texto:</label>
+  <textarea id="message_text" formControlName="message_text"></textarea>
+
+  <button type="submit">Crear Campaña</button>
+</form>
+</div>

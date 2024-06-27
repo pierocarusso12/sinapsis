@@ -1,0 +1,18 @@
+<form [formGroup]="campaignListForm" (ngSubmit)="onSubmit()">
+    <div>
+      <label for="startDate">Start Date</label>
+      <input id="startDate" formControlName="startDate" type="date">
+    </div>
+    <div>
+      <label for="endDate">End Date</label>
+      <input id="endDate" formControlName="endDate" type="date">
+    </div>
+    <button type="submit">List Campaigns</button>
+  </form>
+  
+  <ul>
+    <li *ngFor="let campaign of campaigns">
+      {{ campaign.name }} - {{ campaign.message }}
+    </li>
+  </ul>
+  
