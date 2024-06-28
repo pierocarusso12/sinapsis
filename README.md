@@ -1,11 +1,11 @@
-#Procedimiento de instalación local
-#No estan importados los archivos de node_modules por lo cual ya deben estar instalados en tu entorno
-##Crear e Importar la base de datos
+# Procedimiento de instalación local
+# No estan importados los archivos de node_modules por lo cual ya deben estar instalados en tu entorno
+## Crear e Importar la base de datos
 Crear la base de datos messages en tu MySQL o phpmyadmin
 CREATE DATABASE messages;
 -Ahora importamos el archivo sql que se encuentra en este proyecto messages.sql dentro de phpmyadmin o abrimos en un bloc de notas para copiar las tablas y datos de prueba
 
-##Configurar los puertos para ejecutar en local
+## Configurar los puertos para ejecutar en local
 en la raíz de la carpeta backend busca el archivo .env , configura el puerto local a tu modo o solo utiliza el localhost, ejemplo:
 DB_HOST=localhost
 DB_PORT=3308
@@ -16,18 +16,18 @@ DB_NAME=messages
 haz lo mismo para otros archivos como serverless.yml , guíate de los archivos
 
 
-##PRIMERO Iniciar proyecto backend:
+## PRIMERO Iniciar proyecto backend:
 `cd backend`             -->Navega hasta la carpeta backend
 `serverless offline`     -->Inicia el servicio serverless en modo offline
 
 
 
-##LUEGO Iniciar proyecto frontend:
+## LUEGO Iniciar proyecto frontend:
 `cd frontend`           -->Navega hasta la carpeta frontend
 `ng serve`              -->Inicia el front con angular en su última version
 
 
-##Endpoints y Operaciones OPENAPI
+## Endpoints y Operaciones OPENAPI
 
 POST /campaigns
 Descripción: Permite crear una nueva campaña.
